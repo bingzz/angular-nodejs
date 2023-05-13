@@ -1,0 +1,4 @@
+<div>
+  <input #key type="text" placeholder="Search Food Mine" (keyup.enter)="search(key.value)" [value]="searchKeyword"/> <!-- reference access -->
+  <button (click)="search(key.value)">Search</button>
+</div>
