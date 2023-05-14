@@ -1,8 +1,8 @@
-import { Food } from "./models";
+import { Food, Tag } from "./models";
 
 export const sample_foods: Food[] = [
   {
-    id: 1,
+    id: '1',
     name: 'Spaghetti',
     price: 59,
     tags: ['pasta', 'marinara', 'meatball'],
@@ -13,7 +13,7 @@ export const sample_foods: Food[] = [
     cookTime: '1:30 mins'
   },
   {
-    id: 2,
+    id: '2',
     name: 'Hamburger',
     price: 38.95,
     tags: ['burger', 'meat', 'vegetables'],
@@ -24,7 +24,7 @@ export const sample_foods: Food[] = [
     cookTime: '40 mins'
   },
   {
-    id: 3,
+    id: '3',
     name: 'Chicken',
     price: 55,
     tags: ['chicken', 'meat'],
@@ -35,7 +35,7 @@ export const sample_foods: Food[] = [
     cookTime: '45 mins'
   },
   {
-    id: 4,
+    id: '4',
     name: 'Salad',
     price: 20.99,
     tags: ['vegetables', 'greens'],
@@ -46,7 +46,7 @@ export const sample_foods: Food[] = [
     cookTime: '10 mins'
   },
   {
-    id: 5,
+    id: '5',
     name: 'Ramen',
     price: 35,
     tags: ['noodles', 'pasta', 'soup'],
@@ -56,4 +56,18 @@ export const sample_foods: Food[] = [
     origins: ['asian'],
     cookTime: '30 mins'
   },
+]
+
+export const sample_tags: Tag[] = [
+  { name: 'All', count: 5 },
+  { name: 'noodles', count: 1 },
+  { name: 'pasta', count: 2 },
+  { name: 'marinara', count: 1 },
+  { name: 'meatball', count: 1 },
+  { name: 'burger', count: 1 },
+  { name: 'meat', count: 2 },
+  { name: 'vegetables', count: 2 },
+  { name: 'greens', count: 1 },
+  { name: 'chicken', count: 1 },
+  { name: 'soup', count: 1 },
 ]

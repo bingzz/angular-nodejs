@@ -12,15 +12,20 @@ export class HomeComponent implements OnInit {
 
   foods: Food[] = [];
 
-  constructor(private foodService: FoodService, activatedRoute: ActivatedRoute) {
-    // subscribe - call function on the changes in the params
+  constructor(foodService: FoodService, activatedRoute: ActivatedRoute) {
+    // activatedRoute subscribe - call function on the changes in the params
     activatedRoute.params.subscribe((params) => {
-      if (!params['keyword']) { // params should be the same keyword to the routemodule
-        this.foods = foodService.getAllFoods();
+      if (params['tag']) {
+        this.foods = foodService.getFoodsByTag(params['tag']);
         return;
       }
 
-      this.foods = foodService.SearchFood(params['keyword']);
+      if (params['keyword']) {
+        this.foods = foodService.SearchFood(params['keyword']);
+        return;
+      }
+
+      this.foods = foodService.getAllFoods();
     })
   }
 
