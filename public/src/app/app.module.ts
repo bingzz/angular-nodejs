@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './common/header/header.component';
@@ -30,6 +31,7 @@ import { NotFoundComponent } from './common/not-found/not-found.component';
     BrowserModule,
     AppRoutingModule,
     RatingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
