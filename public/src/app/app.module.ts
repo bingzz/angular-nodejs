@@ -14,6 +14,13 @@ import { FoodDetailsComponent } from './pages/food-details/food-details.componen
 import { CartPageComponent } from './pages/cart-page/cart-page.component';
 import { TitleComponent } from './common/title/title.component';
 import { NotFoundComponent } from './common/not-found/not-found.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { InputContainerComponent } from './common/input-container/input-container.component';
+import { InputValidationComponent } from './common/input-validation/input-validation.component';
+import { TextInputComponent } from './common/text-input/text-input.component';
+import { DefaultButtonComponent } from './common/default-button/default-button.component';
 
 @NgModule({
   declarations: [
@@ -25,13 +32,20 @@ import { NotFoundComponent } from './common/not-found/not-found.component';
     FoodDetailsComponent,
     CartPageComponent,
     TitleComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LoginPageComponent,
+    InputContainerComponent,
+    InputValidationComponent,
+    TextInputComponent,
+    DefaultButtonComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     RatingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

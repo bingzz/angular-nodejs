@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+button {
+  height: 3.5rem;
+  border: none;
+  outline: none;
+  font-weight: 100;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+  width: 100%;
+  margin: 1rem auto;
+  opacity: 0.8;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+}
